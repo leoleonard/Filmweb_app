@@ -8,23 +8,34 @@ public class FIlmweb {
         //tworzenie obiektu
         //:::Movie  movie1 = new Movie("Titanic", 1997, "James Cameron", "Dramat");
         //tworzenie tablicy: typ [] nazwa = new typ[rozmiar tablicy]
-        Movie[] movies = new Movie[5];
-        movies[0] =  new Movie("Titanic", 1997, "James Cameron", "Dramat");
-       // movie1.show();
+        Movie[] movies = new Movie[2];
+        //movies[0] =  new Movie("Titanic", 1997, "James Cameron", "Dramat");
+        // movie1.show();
 
-        System.out.println("Dodaj film");
-        Scanner scanner = new Scanner(System.in);
-        movies[1] = new Movie();
-        System.out.println("Podaj tytluł");
-        movies[1].setTitle(scanner.nextLine());
-        System.out.println("Podaj rok");
-        movies[1].setYear(scanner.nextInt());
-        scanner.nextLine();
-        System.out.println("Podaj rezysera");
-        movies[1].setDirector(scanner.nextLine());
-        System.out.println("Podaj gatunek");
-        movies[1].setGenre(scanner.nextLine());
+        //wczytanie infomracji o 2 fimach poprzez petle
+        for (int i = 0; i < movies.length; i++) {
+            System.out.println("Dodaj film");
+            Scanner scanner = new Scanner(System.in);
+            movies[i] = new Movie();
+            System.out.println("Podaj tytuł");
+            movies[i].setTitle(scanner.nextLine());
+            System.out.println("Podaj rok");
+            movies[i].setYear(scanner.nextInt());
+            scanner.nextLine();
+            System.out.println("Podaj rezysera");
+            movies[i].setDirector(scanner.nextLine());
+            System.out.println("Podaj gatunek");
+            movies[i].setGenre(scanner.nextLine());
+        }
 
+        for (Movie movie : movies) {
+            movie.show();
+        }
+
+        //tworzenie petly: movies.fori; movies.for;
+
+
+        movies[0].show();
         movies[1].show();
         //wywowalenie metody na obiekcie
     }
