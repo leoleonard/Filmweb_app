@@ -1,4 +1,5 @@
 public class Movie {
+    //model
 
     //pola - specyfikator dostepu, typ, nazwa
     //pola w klasie powinny byc private! - Javabeans
