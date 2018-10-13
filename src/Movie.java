@@ -59,5 +59,9 @@ public class Movie {
         System.out.printf("%s %s %s %d\n", title, director, genre, year);
     }
 
-
+    @Override
+    public String toString() {
+        return String.format("%s %s %s %d\n", title, director, genre, year);
+    }
+    
 }

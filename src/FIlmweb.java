@@ -20,10 +20,15 @@ public class FIlmweb {
             //::przeniesienie do metody static
         }
 
+        //alt + cmd + m -> showAllMovies
+        showAllMovies(movies);
+
+    }
+
+    private static void showAllMovies(Movie[] movies) {
         for (Movie movie : movies) {
             movie.show();
         }
-
     }
 
     private static Movie createMovie() {
