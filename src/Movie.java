@@ -55,13 +55,13 @@ public class Movie {
 
     //metody
 
-    void show() {
-        System.out.printf("%s %s %s %d\n", title, director, genre, year);
-    }
+//    void show() {
+//        System.out.printf("%s %s %s %d\n", title, director, genre, year);
+//    }
 
     @Override
     public String toString() {
         return String.format("%s %s %s %d\n", title, director, genre, year);
     }
-    
+
 }

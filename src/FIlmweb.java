@@ -27,7 +27,7 @@ public class FIlmweb {
 
     private static void showAllMovies(Movie[] movies) {
         for (Movie movie : movies) {
-            movie.show();
+            System.out.println(movie);
         }
     }
 
