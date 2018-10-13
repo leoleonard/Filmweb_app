@@ -33,24 +33,24 @@ public class FIlmweb {
 //        :::
     }
 
-    private static void showAllMovies(Movie[] movies) {
-        for (Movie movie : movies) {
-            System.out.println(movie);
-        }
-    }
+//    private static void showAllMovies(Movie[] movies) {
+//        for (Movie movie : movies) {
+//            System.out.println(movie);
+//        }
+//    }
 
-    private static Movie createMovie() {
-        Scanner scanner = new Scanner(System.in);
-        Movie movie = new Movie();
-        System.out.println("Podaj tytuł");
-        movie.setTitle(scanner.nextLine());
-        System.out.println("Podaj rok");
-        movie.setYear(scanner.nextInt());
-        scanner.nextLine();
-        System.out.println("Podaj rezysera");
-        movie.setDirector(scanner.nextLine());
-        System.out.println("Podaj gatunek");
-        movie.setGenre(scanner.nextLine());
-        return movie;
-    }
+//    private static Movie createMovie() {
+//        Scanner scanner = new Scanner(System.in);
+//        Movie movie = new Movie();
+//        System.out.println("Podaj tytuł");
+//        movie.setTitle(scanner.nextLine());
+//        System.out.println("Podaj rok");
+//        movie.setYear(scanner.nextInt());
+//        scanner.nextLine();
+//        System.out.println("Podaj rezysera");
+//        movie.setDirector(scanner.nextLine());
+//        System.out.println("Podaj gatunek");
+//        movie.setGenre(scanner.nextLine());
+//        return movie;
+//    }
 }
