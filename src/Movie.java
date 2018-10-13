@@ -7,6 +7,9 @@ public class Movie {
     private String director;
     private String genre;
 
+    Movie() {};
+    //konstrktor bez parametrow
+
 
     //konstruktory
     //:::utworzenie konstruktora nie(!) domyslnego
