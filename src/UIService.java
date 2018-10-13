@@ -9,18 +9,27 @@ public class UIService {
     Movie readMovie() {
         Movie movie = new Movie();
         System.out.println("Podaj unikalne ID");
-        movie.setYear(scanner.nextInt());
-        scanner.nextLine();
+        movie.setId(readInt());
         System.out.println("Podaj tytuł");
         movie.setTitle(scanner.nextLine());
         System.out.println("Podaj rok");
-        movie.setYear(scanner.nextInt());
-        scanner.nextLine();
+        movie.setYear(readInt());
         System.out.println("Podaj rezysera");
         movie.setDirector(scanner.nextLine());
         System.out.println("Podaj gatunek");
         movie.setGenre(scanner.nextLine());
         return movie;
+    }
+
+    int readOption() {
+        System.out.println("Podaj numer opcji");
+        return scanner.nextInt();
+    }
+
+    private int readInt() {
+        int number = scanner.nextInt();
+        scanner.nextLine();
+        return number;
     }
 
 

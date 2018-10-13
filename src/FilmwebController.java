@@ -32,9 +32,7 @@ public class FilmwebController {
     }
 
     int readOption() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Numer opcji");
-        int optionNumber = scanner.nextInt();
+        int optionNumber = uiService.readOption();
         return optionNumber;
     }
 
