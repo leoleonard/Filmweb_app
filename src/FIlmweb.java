@@ -35,8 +35,8 @@ public class FIlmweb {
         //tworzenie petly: movies.fori; movies.for;
 
 
-        movies[0].show();
-        movies[1].show();
+//        movies[0].show();
+//        movies[1].show();
         //wywowalenie metody na obiekcie
     }
 }
