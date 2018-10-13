@@ -5,24 +5,32 @@ public class FIlmweb {
     public static void main(String[] args) {
         //zmienna zawiera: typ, referencje, przypisanie
 
+        //obiekt do FilmwebController
+        FilmwebController controller = new FilmwebController();
+        controller.mainLoop();
+
         //tworzenie obiektu
         //:::Movie  movie1 = new Movie("Titanic", 1997, "James Cameron", "Dramat");
         //tworzenie tablicy: typ [] nazwa = new typ[rozmiar tablicy]
-        Movie[] movies = new Movie[2];
+//
+//        :::::::
+//        Movie[] movies = new Movie[2];
+//        ::::::::
         //movies[0] =  new Movie("Titanic", 1997, "James Cameron", "Dramat");
         // movie1.show();
 
         //wczytanie infomracji o 2 fimach poprzez petle
         //tworzenie petly: movies.fori; movies.for;
-        for (int i = 0; i < movies.length; i++) {
-            System.out.println("Dodaj film");
-            movies[i] = createMovie();
-            //::przeniesienie do metody static
-        }
-
-        //alt + cmd + m -> showAllMovies
-        showAllMovies(movies);
-
+//        :::
+//        for (int i = 0; i < movies.length; i++) {
+//            System.out.println("Dodaj film");
+//            movies[i] = createMovie();
+//            //::przeniesienie do metody static
+//        }
+//
+//        //alt + cmd + m -> showAllMovies
+//        showAllMovies(movies);
+//        :::
     }
 
     private static void showAllMovies(Movie[] movies) {

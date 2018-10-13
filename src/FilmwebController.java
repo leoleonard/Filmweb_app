@@ -8,12 +8,15 @@ public class FilmwebController {
     private static final int EXIT = 4;
 
     void mainLoop() {
-        //glowna petla programu
-        ShowOptions();
-        //wybor opcji
-        int option = readOption();
-        //wykonanie opcji dokonanej przez uzytkownika
-        executeOption(option);
+        int option
+        do {
+            //glowna petla programu
+            ShowOptions();
+            //wybor opcji
+             option = readOption();
+            //wykonanie opcji dokonanej przez uzytkownika
+            executeOption(option);
+        } while (option != EXIT);
     }
 
 
