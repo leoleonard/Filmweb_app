@@ -8,6 +8,10 @@ public class MovieDatabase {
     //lista jest interfejsem, korzysta z polimorfizmu
     private List<Movie> movies = new ArrayList<>();
 
+    public List<Movie> getMovies() {
+        return movies;
+    }
+
     public void add(Movie movie) throws DuplicateMovieException {
         //czy film z danym ID istnieje juz w bazie?
         Movie foundMovie = findById(movie.getId());

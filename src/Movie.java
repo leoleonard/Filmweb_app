@@ -74,7 +74,10 @@ public class Movie {
 
     @Override
     public String toString() {
-        return String.format("%s %s %s %d\n", title, director, genre, year);
+        return String.format("%d %s %s %s %d\n", id, title, director, genre, year);
+    }
+    public String toCsv() {
+        return String.format("%d;%s;%s;%s;%d\n", id, title, director, genre, year);
     }
 
     @Override
