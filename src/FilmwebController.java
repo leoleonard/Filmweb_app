@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class FilmwebController {
@@ -10,6 +11,8 @@ public class FilmwebController {
 
     private MovieDatabase database = new MovieDatabase();
     private UIService uiService = new UIService();
+
+    private FIleService fIleService = new FIleService();
 
     void mainLoop() {
         int option;
@@ -50,6 +53,7 @@ public class FilmwebController {
 
                 break;
             case EXIT:
+                exit();
                 break;
             default:
                 System.out.println("Nieznana opcja");
@@ -58,13 +62,27 @@ public class FilmwebController {
 
     private void getAddMovie() {
         Movie movie = uiService.readMovie();
-        database.add(movie);
+        try {
+            database.add(movie);
+        } catch (DuplicateMovieException e) {
+            e.printStackTrace();
+            System.out.println("Film o podanym ID już istnieje w bazie");
+        }
     }
 
     private void getRemoveMovie() {
         //pobranie ID od uzytkownika
         int movieId = uiService.readMovieId();
         database.removeById(movieId);
+    }
+
+    void exit() {
+        try {
+            fIleService.save(database);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Nie udało się zapisać danych");
+        }
     }
 
 
