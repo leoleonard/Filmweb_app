@@ -34,13 +34,13 @@ public class FilmwebController {
     void executeOption(int opt) {
         //zdefiniowanie switcha
         switch (opt) {
-            case 1:
+            case ADD_MOVIE:
                 break;
-            case 2:
+            case REMOVE_MOVIE:
                 break;
-            case 3:
+            case SEARCH_MOVIE:
                 break;
-            case 4:
+            case EXIT:
                 break;
             default:
                 System.out.println("Nieznana opcja");
