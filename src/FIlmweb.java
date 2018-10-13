@@ -13,30 +13,31 @@ public class FIlmweb {
         // movie1.show();
 
         //wczytanie infomracji o 2 fimach poprzez petle
+        //tworzenie petly: movies.fori; movies.for;
         for (int i = 0; i < movies.length; i++) {
             System.out.println("Dodaj film");
-            Scanner scanner = new Scanner(System.in);
-            movies[i] = new Movie();
-            System.out.println("Podaj tytuł");
-            movies[i].setTitle(scanner.nextLine());
-            System.out.println("Podaj rok");
-            movies[i].setYear(scanner.nextInt());
-            scanner.nextLine();
-            System.out.println("Podaj rezysera");
-            movies[i].setDirector(scanner.nextLine());
-            System.out.println("Podaj gatunek");
-            movies[i].setGenre(scanner.nextLine());
+            movies[i] = createMovie();
+            //::przeniesienie do metody static
         }
 
         for (Movie movie : movies) {
             movie.show();
         }
 
-        //tworzenie petly: movies.fori; movies.for;
+    }
 
-
-//        movies[0].show();
-//        movies[1].show();
-        //wywowalenie metody na obiekcie
+    private static Movie createMovie() {
+        Scanner scanner = new Scanner(System.in);
+        Movie movie = new Movie();
+        System.out.println("Podaj tytuł");
+        movie.setTitle(scanner.nextLine());
+        System.out.println("Podaj rok");
+        movie.setYear(scanner.nextInt());
+        scanner.nextLine();
+        System.out.println("Podaj rezysera");
+        movie.setDirector(scanner.nextLine());
+        System.out.println("Podaj gatunek");
+        movie.setGenre(scanner.nextLine());
+        return movie;
     }
 }
