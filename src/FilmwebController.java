@@ -57,7 +57,9 @@ public class FilmwebController {
     }
 
     private void getRemoveMovie() {
-
+        //pobranie ID od uzytkownika
+        int movieId = uiService.readMovieId();
+        database.removeById(movieId);
     }
 
     private void getAddMovie() {

@@ -26,6 +26,11 @@ public class UIService {
         return scanner.nextInt();
     }
 
+    int readMovieId() {
+        System.out.println("Podaj ID filmu");
+        return readInt();
+    }
+
     private int readInt() {
         int number = scanner.nextInt();
         scanner.nextLine();
