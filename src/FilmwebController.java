@@ -38,10 +38,13 @@ public class FilmwebController {
         //zdefiniowanie switcha
         switch (opt) {
             case ADD_MOVIE:
+
                 break;
             case REMOVE_MOVIE:
+
                 break;
             case SEARCH_MOVIE:
+
                 break;
             case EXIT:
                 break;
