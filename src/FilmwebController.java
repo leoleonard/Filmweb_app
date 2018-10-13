@@ -8,7 +8,7 @@ public class FilmwebController {
     private static final int EXIT = 4;
 
     void mainLoop() {
-        int option
+        int option;
         do {
             //glowna petla programu
             ShowOptions();
