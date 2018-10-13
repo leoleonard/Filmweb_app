@@ -46,7 +46,7 @@ public class FilmwebController {
                 getAddMovie();
                 break;
             case REMOVE_MOVIE:
-
+                getRemoveMovie();
                 break;
             case SEARCH_MOVIE:
 
@@ -56,6 +56,10 @@ public class FilmwebController {
             default:
                 System.out.println("Nieznana opcja");
         }
+    }
+
+    private void getRemoveMovie() {
+
     }
 
     private void getAddMovie() {

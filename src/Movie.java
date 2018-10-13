@@ -3,6 +3,7 @@ public class Movie {
 
     //pola - specyfikator dostepu, typ, nazwa
     //pola w klasie powinny byc private! - Javabeans
+    private int id;
     private String title;
     private int year;
     private String director;
@@ -15,11 +16,20 @@ public class Movie {
     //konstruktory
     //:::utworzenie konstruktora nie(!) domyslnego
 
-    public Movie(String title, int year, String director, String genre) {
+    public Movie(int id, String title, int year, String director, String genre) {
+        this.id = id;
         this.title = title;
         this.year = year;
         this.director = director;
         this.genre = genre;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {

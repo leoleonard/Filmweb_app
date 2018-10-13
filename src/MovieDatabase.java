@@ -8,6 +8,7 @@ public class MovieDatabase {
     //lista jest interfejsem, korzysta z polimorfizmu
     private List<Movie> movies = new ArrayList<>();
 
+
     public void add(Movie movie) {
         movies.add(movie);
     }

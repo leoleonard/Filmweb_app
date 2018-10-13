@@ -8,6 +8,9 @@ public class UIService {
 
     Movie readMovie() {
         Movie movie = new Movie();
+        System.out.println("Podaj unikalne ID");
+        movie.setYear(scanner.nextInt());
+        scanner.nextLine();
         System.out.println("Podaj tytuł");
         movie.setTitle(scanner.nextLine());
         System.out.println("Podaj rok");
