@@ -56,7 +56,7 @@ public class Movie {
     //metody
 
     void show() {
-        System.out.printf("%s %s %s %d", title, director, genre, year);
+        System.out.printf("%s %s %s %d\n", title, director, genre, year);
     }
 
 
