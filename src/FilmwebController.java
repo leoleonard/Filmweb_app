@@ -43,9 +43,7 @@ public class FilmwebController {
         switch (opt) {
             case ADD_MOVIE:
                 //wczytanie informacji o filmie i zapisanie ich w bazie
-                Movie movie = uiService.readMovie();
-                database.add(movie);
-
+                getAddMovie();
                 break;
             case REMOVE_MOVIE:
 
@@ -58,6 +56,11 @@ public class FilmwebController {
             default:
                 System.out.println("Nieznana opcja");
         }
+    }
+
+    private void getAddMovie() {
+        Movie movie = uiService.readMovie();
+        database.add(movie);
     }
 
 }
